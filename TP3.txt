@@ -1,0 +1,19 @@
+SHOW TABLES;
+
+SELECT * FROM chevaL;
+
+
+SELECT * FROM chevaL.chevaux
+WHERE race = 'Arabian'
+ORDER BY nom_cheval DESC;
+
+SELECT tailleType, Poidstype FROM chevaL.chevaux
+WHERE race = 'Arabian';
+
+SELECT DISTINCT proprietaire FROM cheval.chevaux;
+
+SELECT nom_personne FROM cheval.personnes
+WHERE superieur IS NULL;
+
+SELECT * FROM cheval.concours
+WHERE YEAR(date_concours) = 2019;
